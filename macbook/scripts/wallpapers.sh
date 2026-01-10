@@ -2,6 +2,7 @@
 
 : '
 Set up my Macbook Wallpapers
+
 '
 
 # Exit immediately if a command exits with a non-zero status, if an undefined variable is used, or if any command in a pipeline fails
