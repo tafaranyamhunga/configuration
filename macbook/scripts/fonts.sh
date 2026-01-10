@@ -3,13 +3,6 @@
 : '
 Download nerd fonts, unzip them, and install them to the system fonts directory.
 
-	-
-	- Huawei Ubuntu 24.04.3 laptop
-	- AWS
-	- GitKraken
-	- Ollama
-	- General purpose key
-
 '
 
 # Exit immediately if a command exits with a non-zero status, if an undefined variable is used, or if any command in a pipeline fails
