@@ -82,6 +82,7 @@ The usage and settings are split into two:
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 cd configuration/macbook
+
 ./install.sh
 ./post_install.sh
 ```
@@ -91,15 +92,19 @@ cd configuration/macbook
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 cd configuration/linux
+
+./install.sh
+./post_install.sh
 ```
 
 ## Repository Structure
 
 | Path                                                                                         | Description                                                |
 | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [macbook/](./macbook/README.md)                                                              | macOS specific setup scripts and dotfiles                  |
-| [linux/](./linux/README.md)                                                                  | Ubuntu specific setup scripts and dotfiles                 |
-| [docs/]()                                                                                    | Tool documentation, philosophy, and troubleshooting        |
+| [assets](./macbook)                                                                          | Project assets                                             |
+| [macbook/](./macbook)                                                                        | macOS specific setup scripts and dotfiles                  |
+| [linux/](./linux)                                                                            | Ubuntu specific setup scripts and dotfiles                 |
+| [docs/](./docs/README.md)                                                                    | Tool documentation, philosophy, and troubleshooting        |
 
 ## Safety And Assumptions
 
