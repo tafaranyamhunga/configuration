@@ -68,6 +68,16 @@ This repository contains scripts, dotfiles, and documentation used to:
 
 ## Installation
 
+### Recommended
+
+Download the repository as a zip folder then:
+
+```bash
+cd configuration-main
+```
+
+ **OR**
+
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 ```
