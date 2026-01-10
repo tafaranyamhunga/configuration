@@ -82,7 +82,8 @@ The usage and settings are split into two:
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 cd configuration/macbook
-./bootstrap.sh
+./install.sh
+./post_install.sh
 ```
 
 ### 2. Linux: Ubuntu
