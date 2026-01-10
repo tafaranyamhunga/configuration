@@ -70,7 +70,6 @@ This repository contains scripts, dotfiles, and documentation used to:
 
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
-cd configuration
 ```
 
 ## Usage
