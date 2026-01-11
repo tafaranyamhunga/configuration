@@ -33,3 +33,6 @@ print_message() {
 
 # Setup SSH keys
 ./scripts/ssh_keys.sh
+
+# Setup docker CLI
+./scripts/docker.sh
