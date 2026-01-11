@@ -41,9 +41,6 @@ print_message "Proceeding with the installation ..."
 # Run the Homebrew installation script
 ./scripts/homebrew.sh
 
-# Run the Brewfile package installation script
-./scripts/brew_bundle.sh
-
 # Run the VS Code extensions installation script
 ./scripts/vscode_extensions.sh
 
