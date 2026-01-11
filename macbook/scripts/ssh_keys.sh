@@ -85,6 +85,11 @@ generate_ssh_key "id_aws" "AWS SSH Key on MacBook Pro"
 
 interaction_notice
 
+# AWS: rsa algorithm
+ssh-keygen -t rsa -b 4096 -C "AWS SSH Key on MacBook Pro (RSA)" -f "$SSH_DIR/id_aws_rsa"
+
+interaction_notice
+
 # AWS: tafara
 generate_ssh_key "id_aws_tafara" "AWS SSH Key for tafara on MacBook Pro"
 
