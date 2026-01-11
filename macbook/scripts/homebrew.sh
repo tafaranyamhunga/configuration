@@ -33,9 +33,9 @@ if ! command -v brew &>/dev/null; then
 
 	# Add Homebrew to the PATH
 	print_message "Adding Homebrew to $PATH"
-	
-	echo >> /Users/tafara/.zprofile
-	echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/tafara/.zprofile
+
+	echo >> "$HOME/.zprofile"
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> "$HOME/.zprofile"
 	eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 	print_message "Homebrew installed successfully."
@@ -44,7 +44,7 @@ if ! command -v brew &>/dev/null; then
 else
 	print_message "Homebrew is already installed."
 fi
-	
+
 # Check if Homebrew is correctly installed
 print_message "Checking if Homebrew was installed successfully ..."
 
@@ -72,4 +72,3 @@ else
 fi
 
 print_message "Brew bundle process completed."
-
