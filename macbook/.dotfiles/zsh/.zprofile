@@ -18,3 +18,8 @@ export PASSWORD_STORE_EXTENSIONS_DIR=/opt/homebrew/lib/password-store/extensions
 
 # >>>>>> Flutter
 export PATH="$HOME/develop/flutter/bin:$PATH"
+
+# >>>>>> Ngrok
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
