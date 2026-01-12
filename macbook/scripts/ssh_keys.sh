@@ -71,7 +71,7 @@ sleep 5
 interaction_notice
 
 # Huawei Ubuntu 24.04.3 laptop
-generate_ssh_key "id_huawei" "Huawei Ubuntu 24.04.3 Laptop SSH Key"
+generate_ssh_key "id_huawei" "Huawei Ubuntu 24.04.3 Laptop SSH Key on Macbook Pro"
 
 interaction_notice
 

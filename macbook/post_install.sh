@@ -34,5 +34,13 @@ print_message() {
 # Setup SSH keys
 ./scripts/ssh_keys.sh
 
+# Give myself time to add my public SSH key to GitHub
+print_message "Please add your public SSH key to your GitHub account. You have 45 seconds ..."
+
+sleep 45
+
+# Authorize gh CLI with GitHub and grant permissions
+./scripts/gh.sh
+
 # Setup docker CLI
 ./scripts/docker.sh
