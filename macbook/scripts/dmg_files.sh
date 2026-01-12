@@ -132,7 +132,7 @@ FILE_URL="https://mega.nz/$FILE"
 
 download_file "$FILE" "$FILE_URL"
 
-print_message "Rive downloaded"
+print_message "Mega downloaded"
 
 ls -lh
 
