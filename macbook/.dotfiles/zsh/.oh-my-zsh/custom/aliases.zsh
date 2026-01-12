@@ -366,6 +366,7 @@ alias snippets-lua="code ~/Library/Application\ Support/Code/User/snippets/lua.j
 alias snippets-perl="code ~/Library/Application\ Support/Code/User/snippets/perl.json"
 alias snippets-php="code ~/Library/Application\ Support/Code/User/snippets/php.json"
 alias snippets-text="code ~/Library/Application\ Support/Code/User/snippets/plaintext.json"
+alias snippets-ts="code ~/Library/Application\ Support/Code/User/snippets/typescript.json"
 alias snippets-pwsh="code ~/Library/Application\ Support/Code/User/snippets/powershell.json"
 alias snippets-py="code ~/Library/Application\ Support/Code/User/snippets/python.json"
 alias snippets-rb="code ~/Library/Application\ Support/Code/User/snippets/ruby.json"
