@@ -98,6 +98,14 @@ else
   print_message "tmux plugin manager (tpm) is already installed."
 fi
 
+# Install VIM plugins using vim-plug
+print_message "Setting up VIM plugins using vim-plug ..."
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+print_message "VIM plugins setup completed."
+
 # Install Oh My ZSH
 print_message "Installing OH My ZSH ..."
 
