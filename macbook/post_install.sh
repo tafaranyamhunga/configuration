@@ -35,9 +35,13 @@ print_message() {
 ./scripts/ssh_keys.sh
 
 # Give myself time to add my public SSH key to GitHub
-print_message "Please add your public SSH key to your GitHub account. You have 45 seconds ..."
+print_message "Please add your public SSH key to your GitHub account. You have 30 seconds ..."
 
-sleep 45
+print_message "*********************************** GITHUB PUBLIC KEY ************************************"
+
+cat "$HOME/.ssh/id_github.pub"
+
+sleep 30
 
 # Authorize gh CLI with GitHub and grant permissions
 ./scripts/gh.sh
