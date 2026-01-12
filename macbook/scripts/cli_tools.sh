@@ -4,9 +4,16 @@
 Install packages, git repositories and other CLI tools
 
 Also setup development environment
+	- git lfs
+    - lazyvim
     - nvm
     - rust
-    - colorls
+    - tmux plugins
+    - vim plugins
+    - oh my zsh
+    - powerlevel10k theme
+    - zsh auto suggestions
+    - zsh syntax highlighting
 
 '
 
