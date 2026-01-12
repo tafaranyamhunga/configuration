@@ -95,6 +95,11 @@ generate_ssh_key "id_aws_tafara" "AWS SSH Key for tafara on MacBook Pro"
 
 interaction_notice
 
+# Git Tower
+generate_ssh_key "id_tower" "Git Tower SSH Key on MacBook Pro"
+
+interaction_notice
+
 # Ollama
 generate_ssh_key "id_ollama" "Ollama SSH Key on MacBook Pro"
 
