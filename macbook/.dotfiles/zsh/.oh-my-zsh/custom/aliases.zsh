@@ -18,7 +18,6 @@ export PGSQL_DB=
 export REDIS=
 export REDIS_PORT=
 export REDIS_PASSWORD=
-
 export REDIS_USER_PASSWORD=
 export REDIS_ENDPOINT=
 
@@ -27,7 +26,6 @@ export MongoDB_APP=
 export MongoDB_PASSWORD=
 export MongoDB_HOST=
 export MongoDB_PORT=
-
 export MongoDB_CONNECTION_STRING=
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navigation
