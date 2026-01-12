@@ -38,11 +38,8 @@ print_message "Proceeding with the installation ..."
 # Run the Rosetta installation script
 ./scripts/rosetta.sh
 
-# Run the Homebrew installation script
+# Run the Homebrew installation script and install Homebrew packages
 ./scripts/homebrew.sh
-
-# Run the Brewfile package installation script
-./scripts/brew_bundle.sh
 
 # Run the VS Code extensions installation script
 ./scripts/vscode_extensions.sh

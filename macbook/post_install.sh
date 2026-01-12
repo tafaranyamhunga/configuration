@@ -41,3 +41,6 @@ sleep 45
 
 # Authorize gh CLI with GitHub and grant permissions
 ./scripts/gh.sh
+
+# Setup docker CLI
+./scripts/docker.sh

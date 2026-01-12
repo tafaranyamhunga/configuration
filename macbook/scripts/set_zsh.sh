@@ -45,27 +45,38 @@ DOTFILES_DIR="$MACBOOK_DIR/.dotfiles"
 if [[ -f "$HOME/.gitconfig" ]]; then
 	print_message "Backing up existing ~/.gitconfig"
 	cp "$HOME/.gitconfig" "$HOME/.gitconfig.backup.$(date "+%Y%m%d-%H%M")"
+else
+	print_message "No existing ~/.gitconfig found. Skipping backup."
 fi
 
 print_message "Temporarily copying the ~/.gitconfig and then symlink it later"
-cp -f "$DOTFILES_DIR/git/config" "$HOME/.config/git/config"
+
+mkdir -p "$HOME/.config/git"
+
+install -m644 "$DOTFILES_DIR/git/.config/git/config" "$HOME/.config/git/config"
 
 # Backup the ~/.zprofile if it exists
 if [[ -f "$HOME/.zprofile" ]]; then
 	print_message "Backing up existing ~/.zprofile"
 	cp "$HOME/.zprofile" "$HOME/.zprofile.backup.$(date "+%Y%m%d-%H%M")"
+else
+	print_message "No existing ~/.zprofile found. Skipping backup."
 fi
 
 print_message "Temporarily copying the ~/.zprofile and then symlink it later"
+
 cp -f "$DOTFILES_DIR/zsh/.zprofile" "$HOME"/.zprofile
 
 # Backup ~/.zshrc if it exists
 if [[ -f "$HOME/.zshrc" ]]; then
 	print_message "Backing up existing ~/.zshrc"
 	cp "$HOME/.zshrc" "$HOME/.zshrc.backup.$(date "+%Y%m%d-%H%M")"
+else
+	print_message "No existing ~/.zshrc found. Skipping backup."
 fi
 
 print_message "Temporarily copying the ~/.zshrc and then symlink it later"
+
 cp -f "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
 
 # Backup ~/.oh-my-zsh/custom/aliases.zsh if it exists
@@ -75,7 +86,7 @@ if [[ -f "$HOME/.oh-my-zsh/custom/aliases.zsh" ]]; then
 fi
 
 print_message "Temporarily copying the ~/.oh-my-zsh/custom/aliases.zsh and then symlink it later"
-cp -f "$DOTFILES_DIR/zsh/.oh-my-zsh/custom/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
+install -m644 "$DOTFILES_DIR/zsh/.oh-my-zsh/custom/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 
 echo "Next steps:"
 echo "  - First change the terminal font to a more suitable nerd font"

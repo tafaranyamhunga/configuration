@@ -28,13 +28,20 @@ install_font() {
 
 	print_message "Installing font: $FONT_NAME to $HOME/Library/Fonts"
 
-	# Ignore files that don't end with otf when unzipping
-	unzip -o "$FONT_NAME" '*.otf' -d "$HOME/Library/Fonts"
+	# Unzip either .otf or .ttf files to the Fonts directory
+	unzip -o "$FONT_NAME" -d "$HOME/Library/Fonts"
 
 	# Remove the zip file after installation
 	rm "$FONT_NAME"
 
 	print_message "Installed font: $FONT_NAME"
+
+	# Clean up any .md, .txt, or LICENSE files that may have been extracted
+	cd "$HOME/Library/Fonts"
+
+	rm -f *.md *.txt LICENSE*
+
+	cd "$DOWNLOAD_DIR"
 }
 
 # Ensure download directory exists

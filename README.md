@@ -96,6 +96,19 @@ cd configuration/macbook
 ./post_install.sh
 ```
 
+> _Scripts might need to be made executables_
+
+```bash
+git clone git@github.com:tafaranyamhunga/configuration.git
+cd configuration/macbook
+
+chmod +x *.sh
+chmod +x scripts/*.sh
+
+./install.sh
+./post_install.sh
+```
+
 ### 2. Linux: Ubuntu
 
 ```bash

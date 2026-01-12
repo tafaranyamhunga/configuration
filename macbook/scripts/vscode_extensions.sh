@@ -20,15 +20,31 @@ print_message() {
 	printf "========================================\n\n"
 }
 
-print_message "Starting VS Code extensions installation..."
+# Ensure VS Code 'code' command is available (script-local)
+ensure_code() {
+	# Already on PATH
+	if command -v code &>/dev/null; then
+		return 0
+	fi
 
-sleep 1
+	# Try VS Code app bundle
+	local vscode_bin="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Check if code command is available
-if ! command -v code &>/dev/null; then
-	print_message "Error: 'code' command not found. Please ensure Visual Studio Code is installed and the 'code' command is available in your PATH."
+	if [[ -x "$vscode_bin/code" ]]; then
+		print_message "Temporarily enabling VS Code 'code' command for this session ..."
+		export PATH="$vscode_bin:$PATH"
+		return 0
+	fi
+
+	# Not available
+	print_message "Error: 'code' command not found. VS Code may not be installed."
+
 	exit 1
-fi
+}
+
+ensure_code
+
+print_message "Starting VS Code extensions installation ..."
 
 EXTENSIONS_FILE="$MACBOOK_DIR/vscode/extensions.list"
 
