@@ -45,7 +45,7 @@ print_message "Installing Python libraries ..."
 
 sleep 1
 
-uv pip install Django Bcrypt Flask Faker litecli ptpython bpython isort iredis redis python-dotenv pymongo pudb mysqlclient SQLAlchemy pony peewee requests matplotlib pandas numpy seaborn autopep8 flake8 ruff pycodestyle mypy typing-extensions psycopg[binary] couchdb pygame pyautogui rich click cmd2 pytest pillow paramiko pickledb "pickledb[sqlite]" icecream humanize python-dateutil cs50 arrow pendulum Logbook orm mongoengine
+uv pip install Django Bcrypt Flask Faker litecli ptpython bpython isort iredis redis python-dotenv "python-dotenv[cli]" pymongo pudb mysqlclient SQLAlchemy pony peewee requests matplotlib pandas numpy seaborn autopep8 flake8 ruff pycodestyle mypy typing-extensions psycopg[binary] couchdb pygame pyautogui rich click cmd2 pytest pillow paramiko pickledb "pickledb[sqlite]" icecream humanize python-dateutil cs50 arrow pendulum Logbook orm mongoengine
 
 print_message "Python libraries installed successfully."
 
