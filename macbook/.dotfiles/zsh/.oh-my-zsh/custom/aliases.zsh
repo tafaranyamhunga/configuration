@@ -157,11 +157,11 @@ alias pgsql-info="brew services info postgresql@18"
 alias pgsql-kill="brew services kill postgresql@18"
 
 # MongoDB
-alias mongo-restart="brew services restart mongodb-community@8.2"
-alias mongo-start="brew services start mongodb-community@8.2"
-alias mongo-stop="brew services stop mongodb-community@8.2"
-alias mongo-info="brew services info mongodb-community@8.2"
-alias mongo-kill="brew services kill mongodb-community@8.2"
+alias mongodb-restart="brew services restart mongodb-community"
+alias mongodb-start="brew services start mongodb-community"
+alias mongodb-stop="brew services stop mongodb-community"
+alias mongodb-info="brew services info mongodb-community"
+alias mongodb-kill="brew services kill mongodb-community"
 
 # Redis
 alias redis-restart="brew services restart redis"
