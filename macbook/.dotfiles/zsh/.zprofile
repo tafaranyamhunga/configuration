@@ -12,6 +12,9 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
+# >>>>>> Setup Python user base binary directory
+export PATH="$HOME/.local/bin:$PATH"
+
 # >>>>>> Pass
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 export PASSWORD_STORE_EXTENSIONS_DIR=/opt/homebrew/lib/password-store/extensions
