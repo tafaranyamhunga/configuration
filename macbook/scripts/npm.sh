@@ -26,4 +26,4 @@ print_message "Installing NPM global packages ..."
 
 sleep 1
 
-npm install -g sass eslint prettier typescript react react-dom semistandard webpack webpack-cli @angular/cli
+npm install -g sass nodemon eslint prettier typescript react react-dom semistandard webpack webpack-cli @angular/cli
