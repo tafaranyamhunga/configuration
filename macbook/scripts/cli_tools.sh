@@ -4,9 +4,16 @@
 Install packages, git repositories and other CLI tools
 
 Also setup development environment
+	- git lfs
+    - lazyvim
     - nvm
     - rust
-    - colorls
+    - tmux plugins
+    - vim plugins
+    - oh my zsh
+    - powerlevel10k theme
+    - zsh auto suggestions
+    - zsh syntax highlighting
 
 '
 
@@ -97,6 +104,14 @@ if [ ! -d "$TMUX_CONFIG_DIR" ]; then
 else
   print_message "tmux plugin manager (tpm) is already installed."
 fi
+
+# Install VIM plugins using vim-plug
+print_message "Setting up VIM plugins using vim-plug ..."
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+print_message "VIM plugins setup completed."
 
 # Install Oh My ZSH
 print_message "Installing OH My ZSH ..."

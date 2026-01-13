@@ -18,7 +18,6 @@ export PGSQL_DB=
 export REDIS=
 export REDIS_PORT=
 export REDIS_PASSWORD=
-
 export REDIS_USER_PASSWORD=
 export REDIS_ENDPOINT=
 
@@ -27,7 +26,6 @@ export MongoDB_APP=
 export MongoDB_PASSWORD=
 export MongoDB_HOST=
 export MongoDB_PORT=
-
 export MongoDB_CONNECTION_STRING=
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navigation
@@ -157,11 +155,11 @@ alias pgsql-info="brew services info postgresql@18"
 alias pgsql-kill="brew services kill postgresql@18"
 
 # MongoDB
-alias mongo-restart="brew services restart mongodb-community@8.2"
-alias mongo-start="brew services start mongodb-community@8.2"
-alias mongo-stop="brew services stop mongodb-community@8.2"
-alias mongo-info="brew services info mongodb-community@8.2"
-alias mongo-kill="brew services kill mongodb-community@8.2"
+alias mongodb-restart="brew services restart mongodb-community"
+alias mongodb-start="brew services start mongodb-community"
+alias mongodb-stop="brew services stop mongodb-community"
+alias mongodb-info="brew services info mongodb-community"
+alias mongodb-kill="brew services kill mongodb-community"
 
 # Redis
 alias redis-restart="brew services restart redis"
@@ -368,6 +366,7 @@ alias snippets-lua="code ~/Library/Application\ Support/Code/User/snippets/lua.j
 alias snippets-perl="code ~/Library/Application\ Support/Code/User/snippets/perl.json"
 alias snippets-php="code ~/Library/Application\ Support/Code/User/snippets/php.json"
 alias snippets-text="code ~/Library/Application\ Support/Code/User/snippets/plaintext.json"
+alias snippets-ts="code ~/Library/Application\ Support/Code/User/snippets/typescript.json"
 alias snippets-pwsh="code ~/Library/Application\ Support/Code/User/snippets/powershell.json"
 alias snippets-py="code ~/Library/Application\ Support/Code/User/snippets/python.json"
 alias snippets-rb="code ~/Library/Application\ Support/Code/User/snippets/ruby.json"

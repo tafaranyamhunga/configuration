@@ -126,6 +126,16 @@ print_message "Rive downloaded"
 
 ls -lh
 
+# Mega
+FILE="MEGAsyncSetupArm64.dmg"
+FILE_URL="https://mega.nz/$FILE"
+
+download_file "$FILE" "$FILE_URL"
+
+print_message "Mega downloaded"
+
+ls -lh
+
 # Unity Hub
 FILE="UnityHubSetup-x64.dmg"
 FILE_URL="https://public-cdn.cloud.unity3d.com/hub/prod/$FILE"

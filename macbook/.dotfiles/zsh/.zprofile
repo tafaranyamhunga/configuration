@@ -12,9 +12,17 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
+# >>>>>> Setup Python user base binary directory
+export PATH="$HOME/.local/bin:$PATH"
+
 # >>>>>> Pass
-PASSWORD_STORE_ENABLE_EXTENSIONS=true
-PASSWORD_STORE_EXTENSIONS_DIR=/opt/homebrew/lib/password-store/extensions
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+export PASSWORD_STORE_EXTENSIONS_DIR=/opt/homebrew/lib/password-store/extensions
 
 # >>>>>> Flutter
 export PATH="$HOME/develop/flutter/bin:$PATH"
+
+# >>>>>> Ngrok
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi

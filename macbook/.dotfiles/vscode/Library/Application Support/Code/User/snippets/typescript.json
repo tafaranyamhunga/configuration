@@ -1,0 +1,44 @@
+{
+    "shebang-node-r": {
+        "prefix": "shebang-node",
+        "body": [
+            "#!/usr/bin/env node"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Node.js"
+    },
+    "shebang-node": {
+        "prefix": "#!node",
+        "body": [
+            "#!/usr/bin/env node"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Node.js"
+    },
+    "shebang-js": {
+        "prefix": "#!js",
+        "body": [
+            "#!/usr/bin/env node"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Node.js"
+    },
+    "shebang-bun-r": {
+        "prefix": "shebang-bun",
+        "body": [
+            "#!/usr/bin/env bun"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Bun"
+    },
+    "shebang-bun": {
+        "prefix": "#!bun",
+        "body": [
+            "#!/usr/bin/env bun"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Bun"
+    },
+    "shebang-ts": {
+        "prefix": "#!ts",
+        "body": [
+            "#!/usr/bin/env bun"
+        ],
+        "description": "Adds a shebang for TypeScript executed with Bun"
+    }
+}
