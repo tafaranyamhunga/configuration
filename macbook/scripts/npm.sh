@@ -26,4 +26,4 @@ print_message "Installing NPM global packages ..."
 
 sleep 1
 
-npm install -g sass nodemon typescript react react-dom semistandard tunnelmole jest mocha chai webpack webpack-cli @angular/cli
+npm install -g sass nodemon typescript react react-dom semistandard tunnelmole branchlet jest mocha chai webpack webpack-cli @angular/cli
