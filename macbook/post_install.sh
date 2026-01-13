@@ -48,3 +48,6 @@ sleep 30
 
 # Setup docker CLI
 ./scripts/docker.sh
+
+# Setup gdb: Create a code-signing certificate and sign gdb
+./scripts/gdb.sh
