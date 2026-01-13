@@ -113,6 +113,13 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 print_message "VIM plugins setup completed."
 
+# Install tunnelmole for localhost HTTPS
+print_message "Setting up tunnelmole for secure localhost HTTPS ..."
+
+curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
+
+print_message "tunnelmole setup completed."
+
 # Install Oh My ZSH
 print_message "Installing OH My ZSH ..."
 
