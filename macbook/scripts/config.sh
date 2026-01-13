@@ -133,6 +133,13 @@ mkdir -p "$HOME/.config/thefuck"
 
 install -m644 "$DOTFILES_DIR/thefuck/.config/thefuck/settings.py" "$HOME/.config/thefuck/settings.py"
 
+# Copy tldr settings
+print_message "Setting up tldr ..."
+
+mkdir -p "$HOME/Library/Application Support/tlrc"
+
+install -m644 "$DOTFILES_DIR/tlrc/Library/Application Support/tlrc/config.toml" "$HOME/Library/Application Support/tlrc/config.toml"
+
 # Copy tmux settings
 print_message "Setting up tmux ..."
 
