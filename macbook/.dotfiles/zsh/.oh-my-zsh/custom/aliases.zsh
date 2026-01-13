@@ -395,7 +395,7 @@ alias compile="gcc -Wall -Wextra -pedantic -ggdb3"
 alias list="pip3 list"
 alias py-package="pip3 show"
 alias repl="bpython"
-alias pyshell="ptpython"
+alias pyshell="ptpython --config-file ~/.config/ptpython/config.py"
 alias pycode="pycodestyle"
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> JavaScript
