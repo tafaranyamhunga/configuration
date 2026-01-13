@@ -68,5 +68,12 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
+# >>>>>>> Setup atuin
+export ATUIN_NOBIND="true"
+eval "$(atuin init zsh)"
+
+# Bind '^r' key to search shell history using atuin
+bindkey '^r' atuin-up-search-viins
+
 # >>>>>> Setup tuitube
 export PATH=/Users/tafara/.termcast/compiled/tuitube/bin:$PATH
