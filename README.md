@@ -61,9 +61,9 @@ This repository contains scripts, dotfiles, and documentation used to:
 
 ## Supported Platforms
 
-- macOS (MacBook)
+- macOS Tahoe 26.2 (MacBook Pro M1)
 - Linux
-  - Ubuntu and most Debian based distros
+  - Ubuntu 24.04.3, _and most Debian based distros_
   - RHEL, Arch (_planned/optional_)
 
 ## Installation
