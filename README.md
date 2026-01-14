@@ -141,3 +141,8 @@ cd configuration/linux
 - _Scripts are designed for **personal use**_
 - _Some scripts may overwrite existing dotfiles_
 - _Review scripts before running on production systems_
+
+## Licensing
+
+All files, unless otherwise stated, are licensed under the MIT License. A copy of the license can be found in the [LICENSE](LICENSE) file.
+
