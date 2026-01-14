@@ -68,7 +68,7 @@ This repository contains scripts, dotfiles, and documentation used to:
 
 ## Installation
 
-### Recommended
+1. ### Recommended
 
 Download the repository as a [zip folder](https://github.com/tafaranyamhunga/configuration/archive/refs/heads/main.zip) then:
 
@@ -76,13 +76,19 @@ Download the repository as a [zip folder](https://github.com/tafaranyamhunga/con
 cd configuration-main
 ```
 
- **OR**
+ 2. ### Using Git
 
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 ```
 
 > _This might fail as [git](https://git-scm.com/) might not yet be installed on the system_
+
+## Requirements
+
+- [Xcode](https://developer.apple.com/xcode/)
+
+> _As the `./install.sh` script starts running, start downloading [Xcode](https://developer.apple.com/xcode/) from the App Store as it is required by most tools._
 
 ## Usage
 
@@ -110,8 +116,6 @@ chmod +x scripts/*.sh
 ./install.sh
 ./post_install.sh
 ```
-
-> **_As the `./install.sh` script starts running, start downloading [Xcode](https://developer.apple.com/xcode/) from the App Store as it is required by most tools._**
 
 ### 2. Linux: Ubuntu
 
