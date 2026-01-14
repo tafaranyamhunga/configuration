@@ -70,7 +70,7 @@ This repository contains scripts, dotfiles, and documentation used to:
 
 ### Recommended
 
-Download the repository as a zip folder then:
+Download the repository as a [zip folder](https://github.com/tafaranyamhunga/configuration/archive/refs/heads/main.zip) then:
 
 ```bash
 cd configuration-main
@@ -81,6 +81,8 @@ cd configuration-main
 ```bash
 git clone git@github.com:tafaranyamhunga/configuration.git
 ```
+
+> _This might fail as [git](https://git-scm.com/) might not yet be installed on the system_
 
 ## Usage
 
@@ -108,6 +110,8 @@ chmod +x scripts/*.sh
 ./install.sh
 ./post_install.sh
 ```
+
+> **_As the `./install.sh` script starts running, start downloading [Xcode](https://developer.apple.com/xcode/) from the App Store as it is required by most tools._**
 
 ### 2. Linux: Ubuntu
 
