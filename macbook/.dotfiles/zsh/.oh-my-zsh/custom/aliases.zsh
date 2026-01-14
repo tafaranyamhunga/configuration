@@ -235,7 +235,10 @@ alias clone="git clone"
 alias status="git status"
 alias rename="git mv"
 
-	# Commit
+# Add remote
+alias add-remote="git remote add origin" # Pass the repository URL
+
+# Commit
 alias commit="git commit -m"
 alias fix-commit="git commit --amend"
 
