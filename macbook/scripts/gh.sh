@@ -35,3 +35,8 @@ sleep 1
 gh auth refresh -h github.com -s delete_repo
 
 print_message "Permission to delete repositories granted successfully."
+
+# Install gh-dash extension for gh CLI
+print_message "Installing gh-dash extension for gh CLI ..."
+
+gh extension install dlvhdr/gh-dash
