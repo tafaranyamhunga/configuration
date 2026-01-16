@@ -76,6 +76,16 @@ print_message "Android Studio downloaded"
 
 ls -lh
 
+# Dotnet
+FILE="dotnet-sdk-10.0.102-osx-arm64.pkg"
+FILE_URL="https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.102/$FILE"
+
+download_file "$FILE" "$FILE_URL"
+
+print_message "Dotnet downloaded ..."
+
+ls -lh
+
 # UTM
 FILE="UTM.dmg"
 FILE_URL="https://github.com/utmapp/UTM/releases/latest/download/$FILE"
